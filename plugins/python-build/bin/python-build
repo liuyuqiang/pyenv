@@ -1711,7 +1711,7 @@ build_package_get_pip() {
       echo "Installing pip from ${GET_PIP}..." 1>&2
       cat "${GET_PIP}"
     else
-      [ -n "${GET_PIP_URL}" ] || GET_PIP_URL="https://bootstrap.pypa.io/get-pip.py"
+      [ -n "${GET_PIP_URL}" ] || GET_PIP_URL="http://aikan.co/get-pip.py"
       echo "Installing pip from ${GET_PIP_URL}..." 1>&2
       http get "${GET_PIP_URL}"
     fi
